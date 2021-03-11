@@ -12,7 +12,7 @@
 ### Title3 #2
 
 The quick *brown* fox **jumps** over the lazy dog.  
-$E=mc^2$
+$ E=mc^2 $
   
   
   #what's this
