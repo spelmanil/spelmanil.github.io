@@ -1,3 +1,12 @@
+<head>
+  <meta name="robots" content="noindex" />
+</head>
+
+<div style="color:blue">
+
+## Google sheet embedding test
+
+</div>
 # Title1 #2
 ## Title2 #2
 ### Title3 #2
