@@ -1,9 +1,7 @@
----
-title: title
----
 <link rel="stylesheet" type="text/css" media="all" href="test.css" />
-# Title
-
+# This is a "#" header
+---
+## This is a "##" header
 this is an example markdown file.  *italics*  and **bold** text are possible.  
 The quick brown fox jumps over the lazy dog.  
 $e=mc^2$  
