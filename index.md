@@ -1,25 +1,47 @@
-<link rel="stylesheet" type="text/css" media="all" href="test.css" />
-# This is a "h1" header  
-The quick brown fox.
-## Purpose  
-The Spelman Innovation Lab has the objective of promoting interdisciplinary ideation, creation, design and making, particularly when such activity has a significant technical component.
-The Spelman Innovation Lab has the objective of promoting interdisciplinary ideation, creation, design and making, particularly when such activity has a significant technical component.
-this is an example markdown file.  *italics*  and **bold** text are possible.  
-The quick brown fox jumps over the lazy dog.  
-$e=mc^2$  
-Equations are possible  
-[jvolcy@spelman.edu](mailto:jvolcy@spelman.edu)
+<link rel="stylesheet" type="text/css" media="all" href="/test.css" />
+# Spelman Innovation Lab  
 
-`code segments are posssible `  
+General Description of Lab & Mission
 
-```
-multi-line code
-segments are also
-possible
-```
+## About the IL  
+* Project Gallery (FB)
+* News & Events (FB)
+* Calendar of Events (Google?)
+* Newsletter [sign-up link]
 
-## The End
 
+## Lab Offerings  
+* Makerspace [Equipment List]
+* Workshops
+* Campus Loaner Program
+* Zynga Arcade
+
+## Faculty & Staff Programs
+* faculty mini grants
+* professional development
+* Lab Projects
+* Host a Workshop
+* Classroom Visits
+
+##Student Programs
+* Entrepreneurship Club
+* VR Club
+* Design Club
+* Student project micro grants
+* Fellows Program
+	* Tech Fellow
+	* Maker Fellow
+	* Entrepreneurship Fellow (coming soon)
+* Host a Workshop ($12/hr ??)
+* Lab Leaders
+
+##Supporters
+* DOE
+* Shank
+* Microsoft
+* Blackstone
+* Zynga?
+* BEA ?
 
 
 
