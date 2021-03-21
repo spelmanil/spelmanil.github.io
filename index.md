@@ -6,7 +6,7 @@ title: title
 
 this is an example markdown file.  *italics*  and **bold** text are possible.  
 The quick brown fox jumps over the lazy dog.  
-$ e=mc^2 $  
+$e=mc^2$  
 Equations are possible  
 { e=mc^2 }  
 `code segments are posssible `  
