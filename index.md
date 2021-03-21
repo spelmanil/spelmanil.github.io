@@ -1,4 +1,4 @@
-<link rel="stylesheet" type="text/css" media="all" href="/test.css" />
+<link rel="stylesheet" type="text/css" media="all" href="/test.css"/>
 # Spelman Innovation Lab  
 
 General Description of Lab & Mission
