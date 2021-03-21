@@ -1,4 +1,6 @@
 h1, h2 {
 	color: #1155cc;
 	margin: 0;
+	text-decoration: none;
+	border-bottom: none;
 }
