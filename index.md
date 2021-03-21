@@ -18,7 +18,7 @@ Founded in 2016 within the Division for the Arts at Spelman College, the Innovat
 * Zynga Arcade [coming soon!]
 
 ## Faculty & Staff Programs
-* [Faculty Mini-Grants](/il_team.md)
+* [Faculty Mini-Grants](/offerings/fac_min_grants.md)
 * Professional Development
 * Lab Projects
 * Host a Workshop
