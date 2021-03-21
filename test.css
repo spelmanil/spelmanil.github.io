@@ -3,11 +3,13 @@ h1, h2, h3{
 	text-decoration: none;
 	border-bottom: none;
 	font-family: "Arial Narrow", Arial, sans-serif;
+	auto_ids: false;
 }
 
 h1 {
 	color: #1155cc;
     font-size: 24;
+    text-align: center;
 }
 
 h2 {
@@ -22,6 +24,7 @@ h3 {
 
 body {
     color: black;
+    margin:0;
     font-size: 11;
 	font-family: Arial, sans-serif;
 }
