@@ -3,14 +3,15 @@
 
 General Description of Lab & Mission
 
-## About the IL  
-* Project Gallery (FB)
+## About the IL
+* IL Team (Pictures/bios +Lab Leaders)
 * News & Events (FB)
 * Calendar of Events (Google?)
+* Project Gallery (FB)
 * Newsletter [sign-up link]
 
 
-## Lab Offerings  
+## Lab Offerings
 * Makerspace [Equipment List]
 * Workshops
 * Campus Loaner Program
@@ -23,7 +24,7 @@ General Description of Lab & Mission
 * Host a Workshop
 * Classroom Visits
 
-##Student Programs
+## Student Programs
 * Entrepreneurship Club
 * VR Club
 * Design Club
@@ -33,9 +34,9 @@ General Description of Lab & Mission
 	* Maker Fellow
 	* Entrepreneurship Fellow (coming soon)
 * Host a Workshop ($12/hr ??)
-* Lab Leaders
+* Become a Lab Leader! [need a description & a list of benefits]
 
-##Supporters
+## Supporters
 * DOE
 * Shank
 * Microsoft
