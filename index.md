@@ -1,23 +1,26 @@
-<head>
-<style>
- h1{
-            background-color: lightblue;
-            color: #1155cc;
-            text-align: center;
-        }
-  h2{
-            color: #1155cc;
-        }
-  body {
-              background-color: lightblue;
+---
+title: title
+---
+<link rel="stylesheet" type="text/css" media="all" href="test.css" />
+#Title
+this is an example markdown file.  *italics*  and **bold** text are possible.  
+The quick brown fox jumps over the lazy dog.  
+$ e=mc^2 $  
+Equations are possible  
+{ e=mc^2 }  
+`code segments are posssible `  
 
-  }
-  iframe{
-    overflow:hidden;
-}
-</style>
-</head>
+```
+multi-line code
+segments are also
+possible
+```
 
-<iframe scrolling="no" src="https://docs.google.com/document/d/e/2PACX-1vTK1Jfadh4E9gBt3xetyGa5ilNEUiMGwXL3T4kmPpjwcnqG-oaP1qyPnERTNlMbYWUSNXg_5N33WAth/pub?embedded=true" width=100% frameborder="0"></iframe>
+###The End.
 
-sdffsd
+<h1> this is a test </h1>
+
+
+
+
+
