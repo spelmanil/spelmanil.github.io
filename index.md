@@ -1,7 +1,8 @@
 <link rel="stylesheet" type="text/css" media="all" href="/test.css"/>
 # Spelman Innovation Lab  
+The Innovation Lab (IL) is a creative commons of Spelman College that is a hub for ideation, creativity, interdisciplinary collaboration and entrepreneurship.  
 
-General Description of Lab & Mission
+Founded in 2016 within the Division for the Arts at Spelman College, the Innovation Lab operates at the intersections of science, art, and technology. The lab supports the Spelman community through a number of services and initiatives including a makerspace, workshop series, carpentry shop and multiple additional points of engagement.  The lab promotes learning, dialogue, exploration, and play that lead to new modes of expression, new ways of thinking, creative problem-solving, and reimagining the role of artists and makers in an increasingly dynamic world.  Visit the [Project Gallery]() for a sampling of work completed in the lab.
 
 ## About the IL
 * IL Team (Pictures/bios +Lab Leaders)
@@ -10,12 +11,11 @@ General Description of Lab & Mission
 * Project Gallery (FB)
 * Newsletter [sign-up link]
 
-
 ## Lab Offerings
 * Makerspace [Equipment List]
 * Workshops
 * Campus Loaner Program
-* Zynga Arcade
+* Zynga Arcade [coming soon!]
 
 ## Faculty & Staff Programs
 * faculty mini grants
