@@ -6,20 +6,20 @@ Founded in 2016 within the Division for the Arts at Spelman College, the Innovat
 
 ## About the IL
 * [IL Team (Pictures/bios +Lab Leaders)](/about/il_team)
-* News & Events (FB)
-* Calendar of Events (Google?)
-* Project Gallery (FB)
-* Newsletter [sign-up link]
+* [News & Events] (https://www.facebook.com/spelmanil)
+* [Calendar of Events] (https://calendar.google.com/calendar/u/0?cid=c3BlbG1hbmlubm92YXRpb25AZ21haWwuY29t)
+* [Project Gallery](https://www.facebook.com/pg/spelmanil/photos/?tab=album&album_id=1551093401599200)
+* Newsletter [Signup](https://goo.gl/forms/324B2IRNfDkQfPvi1)
 
 ## Lab Offerings
-* Makerspace [Equipment List]
-* Workshops
+* Makerspace [Equipment List](https://sites.google.com/site/spelmaninnovationlab/)
+* [Workshops]()
 * Campus Loaner Program
 * Zynga Arcade [coming soon!]
 
 ## Faculty & Staff Programs
-* faculty mini grants
-* professional development
+* [Faculty Mini-Grants](/il_team.md)
+* Professional Development
 * Lab Projects
 * Host a Workshop
 * Classroom Visits
@@ -28,7 +28,7 @@ Founded in 2016 within the Division for the Arts at Spelman College, the Innovat
 * Entrepreneurship Club
 * VR Club
 * Design Club
-* Student project micro grants
+* Student Project Micro-Grants
 * Fellows Program
 	* Tech Fellow
 	* Maker Fellow
@@ -37,6 +37,8 @@ Founded in 2016 within the Division for the Arts at Spelman College, the Innovat
 * Become a Lab Leader! [need a description & a list of benefits]
 
 ## Supporters
+*This will be a page of icons*  
+
 * DOE
 * Shank
 * Microsoft
