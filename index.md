@@ -6,8 +6,8 @@ Founded in 2016 within the Division for the Arts at Spelman College, the Innovat
 
 ## About the IL
 * [IL Team (Pictures/bios +Lab Leaders)](/about/il_team)
-* [News & Events] (https://www.facebook.com/spelmanil)
-* [Calendar of Events] (https://calendar.google.com/calendar/u/0?cid=c3BlbG1hbmlubm92YXRpb25AZ21haWwuY29t)
+* [News & Events](https://www.facebook.com/spelmanil)
+* [Calendar of Events](https://calendar.google.com/calendar/u/0?cid=c3BlbG1hbmlubm92YXRpb25AZ21haWwuY29t)
 * [Project Gallery](https://www.facebook.com/pg/spelmanil/photos/?tab=album&album_id=1551093401599200)
 * Newsletter [Signup](https://goo.gl/forms/324B2IRNfDkQfPvi1)
 
