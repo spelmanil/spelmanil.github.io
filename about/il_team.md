@@ -1,5 +1,7 @@
 <link rel="stylesheet" type="text/css" media="all" href="/test.css"/>
 # Innovation Lab Team  
+_This page requires pictures and bios_  
+
 The Innovation Lab (IL) team welcomes you to stop in or reach out to any member of the team to discuss collaboration opportunities, new ideas, student projects or other innovative ideas!
 
 
