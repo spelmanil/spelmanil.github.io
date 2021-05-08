@@ -12,8 +12,8 @@
         margin-left: auto;
         margin-right:auto;
         overflow: hidden;
-        margin-top: 1%;
-        margin-bottom: 1%;
+        margin-top: 0%;
+        margin-bottom: 0%;
     }
 
     #container {
@@ -52,7 +52,7 @@
         margin-bottom:auto;
         padding:0px 30px 0px 30px;
     }
-    
+
     #footer img {
       margin-top:2%; /* ~ of 2.5% */
     }
@@ -65,18 +65,46 @@
             </div>
 
             <!-- publish your Google doc to the web.  Then, pass the
-            weblink as a query parameter by appending it to the URL
-            for this html page, separated by a '?'.  For example, if
+            weblink as a 'src' query parameter by appending it to the URL
+            for this html page.  For example, if
             this webpage is index.html, and you wish to view a Google
             doc at https://docs.google.com/abcxyz123, then construct
             the following URL:
-            http://index.html?https://docs.google.com/abcxyz123 -->
-            
+            http://index.html?src=https://docs.google.com/abcxyz123 -->
+
             <script>
-            var GDocWebLink = '<embed id="content" src="' + window.location.search.substring(1) + '?embedded=true"></embed>';
-            window.document.write(GDocWebLink);
+                /* set default values here */
+                var src = "default.html";
+
+                var urlParams = new URLSearchParams(window.location.search);
+                var keys = urlParams.keys();
+                for(key of keys) {
+                  val = urlParams.get(key);
+                  //console.log(">>"+key+"="+val+"<<");
+
+                  if (key == "src") {
+                    src = val;
+                  }
+
+                  if (key == "themeColor"){
+                    //raw hex values used for colors are formatted ad #rrggbb.  In the URL parameter, encode this as %23rrggbb as use of the '#' character is reserved.
+                    document.getElementsByTagName('style')[0].innerHTML += "#container {background-color: " + val + ";}";
+                  }
+
+                  if (key == "backgroundColor"){
+                    document.getElementsByTagName('style')[0].innerHTML += "body {background-color: " + val + ";}";
+                  }
+
+                  if (key == "bodyWidth"){
+                    document.getElementsByTagName('style')[0].innerHTML += "body {width: " + val + ";}";
+                  }
+
+                }
+
+                var GDocWebLink = '<embed id="content" src="' + src + '?embedded=true"></embed>';
+                window.document.write(GDocWebLink);
             </script>
-            
+
             <div id="footer">
               <img style="float:left;height:90%;" src="img/lower_left_image.png"></img>
               <img style="float:right;height:90%;" src="img/lower_right_image.png"></img>
@@ -88,4 +116,3 @@
     </body>
 
 </html>
-

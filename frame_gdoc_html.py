@@ -66,16 +66,45 @@ html_template = '''
             </div>
 
             <!-- publish your Google doc to the web.  Then, pass the
-            weblink as a query parameter by appending it to the URL
-            for this html page, separated by a '?'.  For example, if
+            weblink as a 'src' query parameter by appending it to the URL
+            for this html page.  For example, if
             this webpage is index.html, and you wish to view a Google
             doc at https://docs.google.com/abcxyz123, then construct
             the following URL:
-            http://index.html?https://docs.google.com/abcxyz123 -->
+            http://index.html?src=https://docs.google.com/abcxyz123 -->
             
             <script>
-            var GDocWebLink = '<embed id="content" src="' + window.location.search.substring(1) + '?embedded=true"></embed>';
-            window.document.write(GDocWebLink);
+                /* set default values here */
+                var src = "default.html";
+
+                var urlParams = new URLSearchParams(window.location.search);
+                var keys = urlParams.keys();
+                for(key of keys) {
+                  val = urlParams.get(key);
+                  //console.log(">>"+key+"="+val+"<<");
+
+                  if (key == "src") {
+                    src = val;
+                  }
+
+                  if (key == "themeColor"){
+                    //raw hex values used for colors are formatted ad #rrggbb.  In the URL parameter, encode this as %23rrggbb as use of the '#' character is reserved.
+                    document.getElementsByTagName('style')[0].innerHTML += "#container {background-color: " + val + ";}";
+                  }
+
+                  if (key == "backgroundColor"){
+                    document.getElementsByTagName('style')[0].innerHTML += "body {background-color: " + val + ";}";
+                  }
+
+                  if (key == "bodyWidth"){
+                    //bodyWidth can be in % or in px.  For URL parameters, encode the '%' symbol as %25.  So 80% body width should be encoded as 'bodyWidth=80%25' in the URL parameters list.
+                    document.getElementsByTagName('style')[0].innerHTML += "body {width: " + val + ";}";
+                  }
+
+                }
+
+                var GDocWebLink = '<embed id="content" src="' + src + '?embedded=true"></embed>';
+                window.document.write(GDocWebLink);
             </script>
             
             <div id="footer">
