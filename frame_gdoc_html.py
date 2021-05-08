@@ -61,9 +61,6 @@ html_template = '''
     </style>
     <body>
         <div id="container">
-            <div  id="header">
-                <a href="{backURL}"><img style="height:100%;" src="img/back.png" /></a><img style="height:100%;" src="img/logo.png"></img>
-            </div>
 
             <!-- publish your Google doc to the web.  Then, pass the
             weblink as a 'src' query parameter by appending it to the URL
@@ -103,6 +100,52 @@ html_template = '''
 
                 }
 
+                window.document.write('<div  id="header">');
+
+                if (urlParams.has("backURL")) //a URL parameter was provided, override the default
+                {
+                  if (urlParams.get("backURL") == ''){
+                    backURL = '';
+                  }
+                  else {
+                    backURL = '<a href="' + urlParams.get("backURL") + '"><img style="height:100%;" src="img/back.png" /></a>';
+                  }
+                }
+                else //no URL parameter was provided, use the default set with the python script
+                {
+                  if ('{backURL}' == '') {
+                    backURL = '';
+                  }
+                  else {
+                    backURL = '<a href="{backURL}"><img style="height:100%;" src="img/back.png" /></a>';
+                  }
+                }
+                window.document.write(backURL);
+
+                //draw the logo
+                window.document.write('<img style="height:100%;" src="img/logo.png"></img>');
+
+                if (urlParams.has("forwardURL")) //a URL parameter was provided, override the default
+                {
+                  if (urlParams.get("forwardURL") == ''){
+                    forwardURL = '';
+                  }
+                    else {
+                      forwardURL = '<a href="' + urlParams.get("forwardURL") + '"><img style="height:100%;float:right" src="img/forward.png" /></a>';
+                    }
+                }
+                else //no URL parameter was provided, use the default set with the python script
+                {
+                  if ('{forwardURL}' == '') {
+                    forwardURL = '';
+                  }
+                  else {
+                   forwardURL = '<a href="{forwardURL}"><img style="height:100%;float:right" src="img/forward.png" /></a>';
+                   }
+                }
+                window.document.write(forwardURL);
+                window.document.write('</div>');
+
                 var GDocWebLink = '<embed id="content" src="' + src + '?embedded=true"></embed>';
                 window.document.write(GDocWebLink);
             </script>
@@ -129,10 +172,10 @@ placeholders = dict();
 placeholders['{backgroundColor}'] = '#eeeeee'
 placeholders['{themeColor}'] = '#2d76d8'
 placeholders['{backURL}'] = 'javascript:history.back()'
+placeholders['{forwardURL}'] = ''   #'javascript:history.forward()'
 #placeholders['{GDocWebLink}'] = INPUT_REQUIRED
 #placeholders['{GDocWebLink}'] = 'https://docs.google.com/document/d/e/2PACX-1vTwkcjKQmjb7W0U2Yq0zZVR9VRzVbM_kOgYdLyMnQFthEKDO-jiYaCF-ucA83yhfVE24oVaEnQhPnhR/pub'
 placeholders['{bodyWidth}'] = '80%'
-
 
 def updateHtmlParameter(placeholder):
     prompt = 'Enter value for '+placeholder+' ['+placeholders[placeholder]+']: '
@@ -150,9 +193,9 @@ for placeholder in placeholders:
     else:
         updateHtmlParameter(placeholder)
     
-    #upate the html template string
+    #update the html template string
     html_template = html_template.replace(placeholder, placeholders[placeholder])
- 
+
     
 #Get the name of the output ifle
 outFile = 'index.html'
