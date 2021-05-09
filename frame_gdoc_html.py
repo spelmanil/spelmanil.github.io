@@ -180,7 +180,7 @@ placeholders['{backURL}'] = 'javascript:history.back()'
 placeholders['{forwardURL}'] = ''   #'javascript:history.forward()'
 #placeholders['{GDocWebLink}'] = INPUT_REQUIRED
 #placeholders['{GDocWebLink}'] = 'https://docs.google.com/document/d/e/2PACX-1vTwkcjKQmjb7W0U2Yq0zZVR9VRzVbM_kOgYdLyMnQFthEKDO-jiYaCF-ucA83yhfVE24oVaEnQhPnhR/pub'
-placeholders['{bodyWidth}'] = '80%'
+placeholders['{bodyWidth}'] = '100%'
 
 def updateHtmlParameter(placeholder):
     prompt = 'Enter value for '+placeholder+' ['+placeholders[placeholder]+']: '
