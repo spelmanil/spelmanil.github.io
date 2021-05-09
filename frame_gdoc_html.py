@@ -2,19 +2,19 @@
 html_template = '''
 <html>
     <head>
-        <title>Innovation Lab Docs</title>
+        <title>Spelman Innovation Lab</title>
     </head>
     <style>
 
     body {
         background-color: {backgroundColor};
         width:{bodyWidth};
-        min-width: 400px;
+        min-width: 300px;
         margin-left: auto;
         margin-right:auto;
         overflow: hidden;
-        margin-top: 1%;
-        margin-bottom: 1%;
+        margin-top: 0%;
+        margin-bottom: 0%;
     }
 
     #container {
@@ -31,7 +31,7 @@ html_template = '''
     #header {
         height:10%;
         min-height:10%;
-        padding:0px 30px 0px 30px;
+        padding:0px 1% 0px 1%;
         margin-top:auto;
         margin-bottom:auto;
     }
@@ -39,9 +39,8 @@ html_template = '''
     #content {
       width:100%;
       min-width:100%;
-      /* 78% = 80% - top_margin - bottom_margin */
-      height:78%;
-      min-height:78%;
+      height:80%;
+      min-height:80%;
       padding:0px;
     }
 
@@ -51,13 +50,19 @@ html_template = '''
         text-align: left;
         margin-top:auto;
         margin-bottom:auto;
-        padding:0px 30px 0px 30px;
+        padding:0px;
+    }
+
+    #header img {
+      margin: 0.5% 0% 0% 0%;
+      height: 90%;
     }
     
     #footer img {
-      margin-top:2%; /* ~ of 2.5% */
+      margin: 0.5% 2% 0% 2%;
+      height: 90%;
     }
-
+    
     </style>
     <body>
         <div id="container">
@@ -69,7 +74,7 @@ html_template = '''
             doc at https://docs.google.com/abcxyz123, then construct
             the following URL:
             http://index.html?src=https://docs.google.com/abcxyz123 -->
-            
+
             <script>
                 /* set default values here */
                 var src = "default.html";
@@ -108,7 +113,7 @@ html_template = '''
                     backURL = '';
                   }
                   else {
-                    backURL = '<a href="' + urlParams.get("backURL") + '"><img style="height:100%;" src="img/back.png" /></a>';
+                    backURL = '<a href="' + urlParams.get("backURL") + '"><img src="img/back.png" /></a>';
                   }
                 }
                 else //no URL parameter was provided, use the default set with the python script
@@ -117,13 +122,13 @@ html_template = '''
                     backURL = '';
                   }
                   else {
-                    backURL = '<a href="{backURL}"><img style="height:100%;" src="img/back.png" /></a>';
+                    backURL = '<a href="{backURL}"><img src="img/back.png" /></a>';
                   }
                 }
                 window.document.write(backURL);
 
                 //draw the logo
-                window.document.write('<img style="height:100%;" src="img/logo.png"></img>');
+                window.document.write('<img src="img/logo.png"></img>');
 
                 if (urlParams.has("forwardURL")) //a URL parameter was provided, override the default
                 {
@@ -131,7 +136,7 @@ html_template = '''
                     forwardURL = '';
                   }
                     else {
-                      forwardURL = '<a href="' + urlParams.get("forwardURL") + '"><img style="height:100%;float:right" src="img/forward.png" /></a>';
+                      forwardURL = '<a href="' + urlParams.get("forwardURL") + '"><img style="float:right" src="img/forward.png" /></a>';
                     }
                 }
                 else //no URL parameter was provided, use the default set with the python script
@@ -140,7 +145,7 @@ html_template = '''
                     forwardURL = '';
                   }
                   else {
-                   forwardURL = '<a href="{forwardURL}"><img style="height:100%;float:right" src="img/forward.png" /></a>';
+                   forwardURL = '<a href="{forwardURL}"><img style="float:right" src="img/forward.png" /></a>';
                    }
                 }
                 window.document.write(forwardURL);
@@ -149,10 +154,10 @@ html_template = '''
                 var GDocWebLink = '<embed id="content" src="' + src + '?embedded=true"></embed>';
                 window.document.write(GDocWebLink);
             </script>
-            
+
             <div id="footer">
-              <img style="float:left;height:90%;" src="img/lower_left_image.png"></img>
-              <img style="float:right;height:90%;" src="img/lower_right_image.png"></img>
+              <img style="float:left" src="img/lower_left_image.png"></img>
+              <img style="float:right" src="img/lower_right_image.png"></img>
 
             </div>
 
@@ -183,7 +188,7 @@ def updateHtmlParameter(placeholder):
     if x!='':
         #if the user entered a value, update the dictionary.  Otherwise, do nothing
         placeholders[placeholder] = x.strip()
-    
+
 #---------- get placeholder parameters from user ----------
 for placeholder in placeholders:
     if placeholders[placeholder] == INPUT_REQUIRED:
@@ -192,11 +197,11 @@ for placeholder in placeholders:
             updateHtmlParameter(placeholder)
     else:
         updateHtmlParameter(placeholder)
-    
+
     #update the html template string
     html_template = html_template.replace(placeholder, placeholders[placeholder])
 
-    
+
 #Get the name of the output ifle
 outFile = 'index.html'
 prompt = 'Enter output file name ['+outFile+']: '
