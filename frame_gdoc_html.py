@@ -20,7 +20,7 @@ html_template = '''
     #container {
         background-color: {themeColor};
         width:100%;
-        min-width:100%;
+        max-width:{maxWidth};
         height:100%;
         min-height:100%;
         margin-left:auto;
@@ -57,12 +57,12 @@ html_template = '''
       margin: 0.5% 0% 0% 0%;
       height: 90%;
     }
-    
+
     #footer img {
       margin: 0.5% 2% 0% 2%;
       height: 90%;
     }
-    
+
     </style>
     <body>
         <div id="container">
@@ -101,6 +101,10 @@ html_template = '''
                   if (key == "bodyWidth"){
                     //bodyWidth can be in % or in px.  For URL parameters, encode the '%' symbol as %25.  So 80% body width should be encoded as 'bodyWidth=80%25' in the URL parameters list.
                     document.getElementsByTagName('style')[0].innerHTML += "body {width: " + val + ";}";
+                  }
+
+                  if (key == "maxWidth"){
+                    document.getElementsByTagName('style')[0].innerHTML += "#container {max-width: " + val + ";}";
                   }
 
                 }
@@ -174,13 +178,14 @@ INPUT_REQUIRED = 'INPUT REQUIRED'
 #---------- define the placeholders & defaults ----------
 placeholders = dict();
 
-placeholders['{backgroundColor}'] = '#eeeeee'
+placeholders['{backgroundColor}'] = 'black'
 placeholders['{themeColor}'] = '#2d76d8'
 placeholders['{backURL}'] = 'javascript:history.back()'
 placeholders['{forwardURL}'] = ''   #'javascript:history.forward()'
 #placeholders['{GDocWebLink}'] = INPUT_REQUIRED
 #placeholders['{GDocWebLink}'] = 'https://docs.google.com/document/d/e/2PACX-1vTwkcjKQmjb7W0U2Yq0zZVR9VRzVbM_kOgYdLyMnQFthEKDO-jiYaCF-ucA83yhfVE24oVaEnQhPnhR/pub'
 placeholders['{bodyWidth}'] = '100%'
+placeholders['{maxWidth}'] = '1100px';
 
 def updateHtmlParameter(placeholder):
     prompt = 'Enter value for '+placeholder+' ['+placeholders[placeholder]+']: '

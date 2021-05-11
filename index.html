@@ -6,7 +6,7 @@
     <style>
 
     body {
-        background-color: #eeeeee;
+        background-color: black;
         width:100%;
         min-width: 300px;
         margin-left: auto;
@@ -19,7 +19,7 @@
     #container {
         background-color: #2d76d8;
         width:100%;
-        min-width:100%;
+        max-width:1100px;
         height:100%;
         min-height:100%;
         margin-left:auto;
@@ -56,12 +56,12 @@
       margin: 0.5% 0% 0% 0%;
       height: 90%;
     }
-    
+
     #footer img {
       margin: 0.5% 2% 0% 2%;
       height: 90%;
     }
-    
+
     </style>
     <body>
         <div id="container">
@@ -100,6 +100,10 @@
                   if (key == "bodyWidth"){
                     //bodyWidth can be in % or in px.  For URL parameters, encode the '%' symbol as %25.  So 80% body width should be encoded as 'bodyWidth=80%25' in the URL parameters list.
                     document.getElementsByTagName('style')[0].innerHTML += "body {width: " + val + ";}";
+                  }
+
+                  if (key == "maxWidth"){
+                    document.getElementsByTagName('style')[0].innerHTML += "#container {max-width: " + val + ";}";
                   }
 
                 }
