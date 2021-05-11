@@ -3,6 +3,7 @@ html_template = '''
 <html>
     <head>
         <title>Spelman Innovation Lab</title>
+        <link rel="icon" href="img/il.ico">
     </head>
     <style>
 
