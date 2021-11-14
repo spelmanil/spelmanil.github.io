@@ -132,7 +132,10 @@
                 window.document.write(backURL);
 
                 //draw the logo
-                window.document.write('<img src="img/logo.png"></img>');
+                if (!urlParams.has("nologo"))
+                {
+                    window.document.write('<img src="img/logo.png"></img>');
+                }
 
                 if (urlParams.has("forwardURL")) //a URL parameter was provided, override the default
                 {
