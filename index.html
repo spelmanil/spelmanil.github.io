@@ -39,8 +39,8 @@
     #content {
       width:100%;
       min-width:100%;
-      height:auto;
-      min-height:100%;
+      height:80%;
+      min-height:80%;
       padding:0px;
     }
 
@@ -78,7 +78,6 @@
             <script>
                 /* set default values here */
                 var src = "default.html";
-
                 var urlParams = new URLSearchParams(window.location.search);
                 var keys = urlParams.keys();
                 for(key of keys) {
@@ -162,7 +161,11 @@
                 window.document.write('</div>');
                 }  //if (!urlParams.has("noheader")
 
-                var GDocWebLink = '<embed id="content" src="' + src + '?embedded=true"></embed>';
+                var contentHeight = 80; //assume we have a header and footer
+                if (urlParams.has("noheader") {contentHeight += 10;}
+                if (urlParams.has("nofooter") {contentHeight += 10;}
+                
+                var GDocWebLink = '<embed id="content" style="height:' + contentHeight' + '%" src="' + src + '?embedded=true"></embed>';
                 window.document.write(GDocWebLink);
                 
                 if (!urlParams.has("nofooter"))  //put the footer
